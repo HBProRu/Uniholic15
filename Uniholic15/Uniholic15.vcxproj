@@ -75,11 +75,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DallasTemperature.h" />
+    <ClInclude Include="OneWire.h" />
     <ClInclude Include="Recipe.h" />
     <ClInclude Include="Visual Micro\.Uniholic15.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DallasTemperature.cpp" />
+    <ClCompile Include="OneWire.cpp" />
     <ClCompile Include="Recipe.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

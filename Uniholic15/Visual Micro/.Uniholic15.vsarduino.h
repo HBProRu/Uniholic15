@@ -86,6 +86,8 @@ extern "C" void __cxa_pure_virtual() {;}
 #include <Uniholic15.ino>
 #include <DallasTemperature.cpp>
 #include <DallasTemperature.h>
+#include <OneWire.cpp>
+#include <OneWire.h>
 #include <Recipe.cpp>
 #include <Recipe.h>
 #endif
