@@ -24,9 +24,15 @@
     <ClInclude Include="Recipe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DallasTemperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Recipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DallasTemperature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

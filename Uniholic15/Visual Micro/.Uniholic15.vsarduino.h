@@ -84,6 +84,8 @@ extern "C" void __cxa_pure_virtual() {;}
 #define portInputRegister(P)
 #define portModeRegister(P)
 #include <Uniholic15.ino>
+#include <DallasTemperature.cpp>
+#include <DallasTemperature.h>
 #include <Recipe.cpp>
 #include <Recipe.h>
 #endif

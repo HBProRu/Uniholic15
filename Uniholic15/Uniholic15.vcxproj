@@ -45,7 +45,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\cores\arduino;C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\variants\standard;D:\Gits\Uniholic15\Uniholic15;C:\FProg\Develop\arduino-1.6.5-r2\libraries;C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\v1peqa0u.jet\Micro Platforms\default\debuggers;C:\Users\ers\AppData\Roaming\Arduino15\packages\esp8266\libraries;C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\cores\arduino;C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\variants\standard;C:\FProg\Develop\arduino-1.6.5-r2\hardware\tools\avr/avr/include/;C:\FProg\Develop\arduino-1.6.5-r2\hardware\tools\avr//avr/include/avr/;C:\FProg\Develop\arduino-1.6.5-r2\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\cores\arduino;C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\variants\standard;D:\Gits\Uniholic15\Uniholic15;C:\FProg\Develop\arduino-1.6.5-r2\libraries;C:\FProg\Develop\arduino-1.6.5-r2\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\v1peqa0u.jet\Micro Platforms\default\debuggers;C:\Users\ers\AppData\Roaming\Arduino15\packages\esp8266\libraries;C:\FProg\Develop\arduino-1.6.5-r2\hardware\tools\avr/avr/include/;C:\FProg\Develop\arduino-1.6.5-r2\hardware\tools\avr//avr/include/avr/;C:\FProg\Develop\arduino-1.6.5-r2\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>D:\Gits\Uniholic15\Uniholic15\Visual Micro\.Uniholic15.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=16000000L;ARDUINO=165;ARDUINO_AVR_UNO;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -74,10 +74,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DallasTemperature.h" />
     <ClInclude Include="Recipe.h" />
     <ClInclude Include="Visual Micro\.Uniholic15.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DallasTemperature.cpp" />
     <ClCompile Include="Recipe.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
