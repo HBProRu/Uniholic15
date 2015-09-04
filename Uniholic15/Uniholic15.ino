@@ -1,18 +1,6 @@
 //#define DEBUG
-//
-//#ifdef DEBUG
-//#define DebugInit(speed) Serial.begin(speed);
-//#define Debug(message, code) {Serial.print(message); Serial.println(code);}
-//#define Debug(message) {Serial.print(message);}
-////#define Debug(message, code) {Serial.print(message); Serial.println(code);}
-//#else
-//#define DebugInit(speed) {}
-//#define Debug(message, code) {}
-//#define Debug(message) {}
-////
-//#endif
 
-
+#include "Debug.h"
 #include "OneWire.h"
 #include "DallasTemperature.h"
 #include "Recipe.h"
@@ -21,7 +9,7 @@ Recipe r1 = Recipe();
 
 void setup() {
 	
-	//DebugInit(115200);
+	DebugInit(115200);
 	Serial.begin(115200);
 
 	r1.name = "Hoegaarden";
@@ -70,7 +58,5 @@ void loop() {
 	Serial.println("---------------------------------------");
 
 	delay(5000);
-
-	r1.mashin()
-
+//	Debug("sf", 2);
 }

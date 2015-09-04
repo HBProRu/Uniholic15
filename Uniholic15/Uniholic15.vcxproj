@@ -57,11 +57,15 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>C:\Users\ers\AppData\Roaming\arduino15\packages\arduino\hardware\avr\1.6.8\cores\arduino;C:\Users\ers\AppData\Roaming\arduino15\packages\arduino\hardware\avr\1.6.8\variants\eightanaloginputs;D:\Gits\Uniholic15\Uniholic15;d:\ers\Prog\Develop\arduino-1.6.5-r2\libraries;C:\Users\ers\AppData\Roaming\arduino15\packages\arduino\hardware\avr\1.6.8\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;D:\ers\Documents\Arduino\libraries;d:\ers\Prog\Develop\arduino-1.6.5-r2\hardware\tools\avr/avr/include/;d:\ers\Prog\Develop\arduino-1.6.5-r2\hardware\tools\avr//avr/include/avr/;d:\ers\Prog\Develop\arduino-1.6.5-r2\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Gits\Uniholic15\Uniholic15\Visual Micro\.Uniholic15.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=165;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;ARDUINO_ARCH_AVR;ARDUINO_AVR_NANO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -76,14 +80,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DallasTemperature.h" />
+    <ClInclude Include="Debug.h" />
     <ClInclude Include="OneWire.h" />
     <ClInclude Include="Recipe.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Visual Micro\.Uniholic15.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DallasTemperature.cpp" />
     <ClCompile Include="OneWire.cpp" />
     <ClCompile Include="Recipe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Uniholic15.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
