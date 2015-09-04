@@ -1,13 +1,15 @@
 #ifndef RECIPE_H
 #define RECIPE_H
 
+
 struct STEP {
-	float temp;
-	int time;
+	char temp;
+	char time;
+	//STEP(unsigned char temp, unsigned char time) : temp(temp), time(time) {};
 };
 
 struct HOP {
-	int time;
+	char time;
 };
 
 class Recipe
@@ -20,16 +22,13 @@ public:
 	const char* name;
 
 	//Температура MashIn, °C
-	float mashin;
+	char mashin;
 
 	//Температурные паузы затирания
 	STEP step[5];
 
-	//MashOut
-	STEP mashout;
-
 	//Пролдолжительность варки
-	int boil;
+	char boil;
 
 	//Массив внесения хмеля
 	HOP hop[3];
