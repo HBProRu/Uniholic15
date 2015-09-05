@@ -6,6 +6,7 @@
 #define DebugMills() {Serial.print("["); Serial.print(TimeToString(millis())); Serial.print("] ");}
 #define DebugPrint(message) {Serial.print(message);}
 #define DebugPrintln(message) {Serial.println(message);}
+#define DebugPrintDEC(message) {Serial.print(message,DEC);}
 
 
 #else
@@ -13,5 +14,6 @@
 #define DebugMills() {}
 #define DebugPrint(message) {}
 #define DebugPrintln(message) {}
+#define DebugPrintDEC(message) {}
 
 #endif
