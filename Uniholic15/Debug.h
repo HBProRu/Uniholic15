@@ -10,7 +10,7 @@
 
 #else
 #define DebugInit(speed) {}
-#define DebugMills {}
+#define DebugMills() {}
 #define DebugPrint(message) {}
 #define DebugPrintln(message) {}
 
