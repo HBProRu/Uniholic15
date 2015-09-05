@@ -1,17 +1,17 @@
 
-//Шина 1-Wire для датчика температуры DS18B20
+//РЁРёРЅР° 1-Wire РґР»СЏ РґР°С‚С‡РёРєР° С‚РµРјРїРµСЂР°С‚СѓСЂС‹ DS18B20
 #define ONE_WIRE_BUS 11
 
-//Кнопки
+//РљРЅРѕРїРєРё
 #define BUTTON_UP = A2
 #define BUTTON_DOWN = A3
 #define BUTTON_START = A0
 #define BUTTON_ENTER = A1
 
-//LCD
+//LCD СЌРєСЂР°РЅ
 #if LCD_TYPE_CONNECT == 1
 
-//экран RS, E, DB4, DB5, DB6, DB7
+//СЌРєСЂР°РЅ RS, E, DB4, DB5, DB6, DB7
 #define OUTPUT_LCD_RS = 2
 #define OUTPUT_LCD_E = 3
 #define OUTPUT_LCD_DB4 = 4
@@ -21,10 +21,10 @@
 
 #elif LCD_TYPE_CONNECT == 2 
 
-//Адрес I2C
+//РђРґСЂРµСЃ I2C
 #define I2C_LCD_ADDRESS 0x27
 
-//Кол-во символов в строке
+//РљРѕР»-РІРѕ СЃРёРјРІРѕР»РѕРІ РІ СЃС‚СЂРѕРєРµ
 #if LCD_CHARS_ROWS == 1
 
 #define I2C_LCD_CHARS = 16
@@ -41,11 +41,11 @@
 
 
 
-//Насос
+//РќР°СЃРѕСЃ
 #define OUTPUT_PUMP = 8
 
-//ТЭН
+//РўР­Рќ 1
 #define OUTPUT_HEAT_1 = 9
 
-//Динамик
+//Р”РёРЅР°РјРёРє
 #define OUTPUT_BUZZER = 10
