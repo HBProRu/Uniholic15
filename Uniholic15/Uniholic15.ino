@@ -1,10 +1,38 @@
+//Раскомментировать при отладке для вывода в Serial
 //#define DEBUG
+
+
+//Тип используемой платы
+// 1 Uniholic v1.5
+#define PCB_TYPE 1
+
+//Способ подключения LCD экрана
+// 1 - 
+// 2 - по I2C
+#define LCD_TYPE_CONNECT 1
+
+//Кол-во символов и строк экрана
+// 1 - 16x2
+// 2 - 20x4
+#define LCD_CHARS_ROWS 1
+
+//Отображаемый язык
+// 1 - Русский
+// 2 - English
+#define LANGUAGE 1
+
 
 #include "Debug.h"
 #include "OneWire.h"
 #include "DallasTemperature.h"
 #include "Recipe.h"
 #include "Functions.h"
+
+#if PCB_TYPE == 1
+#include "Pcb_Uniholic_15.h"
+//#elif PCBType == 2 
+//#include "Pcb_Brauduino_DanielXan.h"
+#endif
 
 
 Recipe r1 = Recipe();
