@@ -38,7 +38,9 @@
 #include "Button.h"
 #include "Functions.h"
 #include "Setting.h"
+#include "PID.h"
 #include "Recipe.h"
+
 
 #if PCB_TYPE == 1
 #include "Pcb_Uniholic_15.h"
