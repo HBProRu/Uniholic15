@@ -65,29 +65,29 @@ private:
 /*
 	Button not pressed :
 
-			 VCC
-			  |
-		 20K | |
-	internal | |
-	 pull-up |_|
-			  |
-			  |					_____
-	input ––––*––––––o–––––––––o     o––––– GND
-					pin       released
-							   button
+             VCC
+              |
+         20K | |
+    internal | |
+     pull-up |_|
+              |
+              |                 _____
+    input ––––*––––––o–––––––––o     o––––– GND
+                    pin       released
+                               button
 
    Button pressed:
 
-		     VCC
-		      |    :
-	     20K | |   :
-	internal | |   :
-	 pull-up |_|   :  some current flows
-			  |     `- - - - - - - - - ->
-			  |
-	input ––––*––––––o–––––––––o–––––o––––– GND
-				    pin        pushed
-							   button
+             VCC
+              |    :
+         20K | |   :
+    internal | |   :
+     pull-up |_|   :  some current flows
+              |     `- - - - - - - - - ->
+              |
+    input ––––*––––––o–––––––––o–––––o––––– GND
+                    pin        pushed
+                               button
 */
 
 
