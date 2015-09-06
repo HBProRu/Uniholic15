@@ -1,12 +1,12 @@
 
 //Шина 1-Wire для датчика температуры DS18B20
-#define ONE_WIRE_BUS 11
+#define ONE_WIRE_BUS 4
 
 //Кнопки
-#define BUTTON_UP = A2
-#define BUTTON_DOWN = A3
-#define BUTTON_START = A0
-#define BUTTON_ENTER = A1
+#define BUTTON_UP A2
+#define BUTTON_DOWN A3
+#define BUTTON_START A0
+#define BUTTON_ENTER A1
 
 //LCD экран
 #if LCD_TYPE_CONNECT == 1
