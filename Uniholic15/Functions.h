@@ -1,3 +1,8 @@
+#if PCB_TYPE == 1
+	#include "Pcb_Uniholic_15.h"
+//#elif PCBType == 2 
+//	#include "Pcb_Brauduino_DanielXan.h"
+#endif
 
 //Возвращает время в формате "HH:mm:ss.SSS" из миллисекунд
 char * TimeToString(unsigned long t)
@@ -12,3 +17,25 @@ char * TimeToString(unsigned long t)
 }
 
 
+void Beep(byte NumBeep, int Period)
+{
+#if BUZZER == 1
+	for (unsigned char i = 0; i < NumBeep; i++)
+	{
+		for (signed short int k = 0; k < 2400; k++) {
+			digitalWrite(OUTPUT_BUZZER, HIGH);
+			delayMicroseconds(208);
+			digitalWrite(OUTPUT_BUZZER, LOW);
+			delayMicroseconds(208);
+		}
+		delay(Period);
+	}
+#elif BUZZER == 2
+	for (unsigned char i = 0; i < NumBeep; i++) {
+		digitalWrite(OUTPUT_BUZZER, HIGH);
+		delay(Period);
+		digitalWrite(OUTPUT_BUZZER, LOW);
+		delay(100);
+	}
+#endif
+}
